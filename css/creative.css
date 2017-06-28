@@ -506,3 +506,12 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+/*Background-Attachment Fix*/
+@media (max-width: 768px) {
+  header {
+    background-attachment: scroll;
+  }
+  .section-heading {
+    background-attachment: scroll;
+  }
+}
