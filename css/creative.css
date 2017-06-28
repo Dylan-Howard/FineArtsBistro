@@ -63,12 +63,12 @@ aside {
   position: relative;
   width: 100%;
   min-height: auto;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
+  /*background-attachment: fixed;*/
+  -webkit-background-size: 130%;
+  -moz-background-size: 130%;
+  background-size: 130%;
+  -o-background-size: 130%;
+  background-position: 50% 0px;
   background-image: url('../img/bg/2.jpg');
   text-align: center;
   color: #FFF;
@@ -223,12 +223,11 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
+  -webkit-background-size: 120%;
+  -moz-background-size: 120%;
+  background-size: 120%;
+  -o-background-size: 120%;
+  background-position: 50% 0px;
   background-image: url('../img/bg/1.jpg');
   text-align: center;
   color: #FFF;
@@ -509,9 +508,9 @@ body {
 /*Background-Attachment Fix*/
 @media (max-width: 768px) {
   header {
-    background-attachment: scroll;
+    /*background-attachment: scroll;*/
   }
   .section-heading {
-    background-attachment: scroll;
+    /*background-attachment: scroll;*/
   }
 }

@@ -61,9 +61,17 @@
         }
     });
 
+    // Smart-switching for images in mobile devices
     if(($(window).width()<768) || (($(window).width() < 1028) && ($(window).height() > 1028))) {
       $('header').css('background-image','url(\'./img/bg/mob/1.jpg\')');
       $('.section-heading').css('background-image','url(\'./img/bg/mob/2.jpg\')');
+    }
+
+    // Parallax scrolling
+    window.onscroll = function(){
+      $('.parallax-head').css('background-position','50% '+ ((window.pageYOffset * 0.2)) + 'px');
+      $('#our-team').css('background-position','50% '+ ((window.pageYOffset-$('#our-team').position().top) * 0.2) + 'px');
+      $('#visit').css('background-position','50% '+ ((window.pageYOffset-$('#visit').position().top) * 0.2) + 'px');
     }
 
 })(jQuery); // End of use strict
