@@ -61,4 +61,9 @@
         }
     });
 
+    if(($(window).width()<768) || (($(window).width() < 1028) && ($(window).height() > 1028))) {
+      $('header').css('background-image','url(\'./img/bg/mob/1.jpg\')');
+      $('.section-heading').css('background-image','url(\'./img/bg/mob/2.jpg\')');
+    }
+
 })(jQuery); // End of use strict
